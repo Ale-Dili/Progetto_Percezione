@@ -9,7 +9,7 @@ root.eval('tk::PlaceWindow . center')
 # Create a listbox
 listbox = Listbox(root, width=40, height=20, selectmode=MULTIPLE)
 
-df = pd.read_csv('country_density.csv', encoding='UTF-8')
+df = pd.read_csv('../country_density.csv', encoding='UTF-8')
 for i  in range(len(df)):
     listbox.insert(i,df.values[i][1])
 #Progetto di Principi e modelli della percezione di: Cogliati Diego, Di Liberti Alessandro, Lasagna Marco, Lo Russo Sara
